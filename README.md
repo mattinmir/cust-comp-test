@@ -18,7 +18,10 @@ This is an adaptation of eg5 from [egs.rby] where you calculate the volume of a 
 `rdl` and `rdr` can be useful for aggregating functions (eg. `add`) on lists of values. They require input types of `<a, <x1, x2, x3, ... >>` and `<<x1, x2, x3,...> ,a>` respectively, due to the sizes of their domain/range, as seen in the images.
 
 #### [parity.rby](parity.rby) and [parity.jpg](parity.jpg)
-This is the code from eg9 of [egs.rby](egs.rby) and an image showing why `apl^~1` is neccessary to get the input into the correct format to match the `rdl` (ie. one item in the left-domain, and a list of three in the top-domain).
+This is the parity code from eg9 of [egs.rby](egs.rby) and an image showing why `apl^~1` is neccessary to get the input into the correct format to match the `rdl` (ie. one item in the left-domain, and a list of three in the top-domain).
+
+#### [convolver.rby](convolver.rby) and [convolver.jpg](convolver.jpg)
+This is the convolver code from eg10 of [egs.rby](egs.rby) and an image showing its diagram. Its input is of the type `<x, <w1, w2, w3>>` Note that ```D```refers to the delay block. 
 
 #### Miscellaneous 
  - Put parameters of functions in angle brackets if there are more than one, eg . ``VAR x y . <x, y> $rel <`mult` <x,y>>.``
