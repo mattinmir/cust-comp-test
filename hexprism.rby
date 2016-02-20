@@ -1,0 +1,11 @@
+# Volume of hexagonal prism = (3*sqrt(3)/2) * a^2 * h
+# input: <a,h>
+
+INCLUDE "prelude.rby".
+
+const = 2.598076211. 
+volume  = fst (fork ; mult) ; mult ; pi1^~1 ; snd const ; mult.
+
+
+
+current = volume.
