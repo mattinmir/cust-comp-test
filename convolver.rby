@@ -1,0 +1,5 @@
+INCLUDE "prelude.rby"
+
+mac = VAR x y w . <<y,x>,w> $rel <`add` <y, `mult` <w,x>>, `D` x>.
+n    = 3.
+current = fst (pi2^~1 ; fst 0) ; rdl n mac ; pi1.
