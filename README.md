@@ -1,7 +1,7 @@
 # cust-comp-test
 
 ### Setup
-To set up your directory to run ruby files, shh into a DoC terminal and run the following:
+To set up your directory to run ruby files, ssh into a DoC terminal and run the following:
 `source /homes/wl/public/setup.ruby`
 
 ### Contents of Repo
