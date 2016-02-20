@@ -7,7 +7,7 @@ To set up your directory to run ruby files, ssh into a DoC terminal and run the 
 ### Contents of Repo
 The source code and images in this repo are examples I have written to help solidify understanding of Rebecca concepts
 
-#### [constant.png](constant.PNG)
+#### [constant.jpg](constant.jpg)
 To use a constant as input to a block, you need to use `pi1^~1 ; snd const ; ...` (or `pi2^~1 ; fst const ; ...`) as shown.
   
 #### [hexprism.rby](hexprism.rby) and [hexprism.jpg](hexprism.jpg)
