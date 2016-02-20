@@ -13,7 +13,7 @@ To use a constant as input to a block, you need to use `pi1^~1 ; snd const ; ...
 ####  [rdr.jpg](rdr.jpg) and [rdl.jpg](rdl.jpg)
 `rdl` and `rdr` can be useful for aggregating functions (eg. `add`) on lists of values. 
 
-#### (hexprism.rby)[hexprism.rby] and (hexprism.jpg)[hexprism.jpg]
+#### [hexprism.rby](hexprism.rby) and (hexprism.jpg)[hexprism.jpg](hexprism.jpg)
 This is an adaptation of eg5 from [egs.rby] where you calculate the volume of a cylinder, but I wanted to try a program that had two inputs instead of 1, and also figure out how fst/snd work.
 
 #### Miscellaneous 
