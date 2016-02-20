@@ -7,13 +7,13 @@ To set up your directory to run ruby files, shh into a DoC terminal and run the 
 ### Contents of Repo
 The source code and images in this repo are examples I have written to help solidify understanding of Rebecca concepts
 
-#### [constant.PNG]
+#### [constant.png](constant.PNG)
 To use a constant as input to a block, you need to use `pi1^~1 ; snd const ; ...` (or `pi2^~1 ; fst const ; ...`) as shown in [constant.png](constant.PNG).
   
-####  [rdr.jpg] and [rdl.jpg]
-`rdl` and `rdr` can be useful for aggregating functions (eg. `add`) on lists of values. See [rdr.jpg](rdr.jpg) and [rdl.jpg](rdl.jpg) for examples.
+####  [rdr.jpg](rdr.jpg) and [rdl.jpg](rdl.jpg)
+`rdl` and `rdr` can be useful for aggregating functions (eg. `add`) on lists of values. 
 
-#### [hexprism.rby] and [hexprism.jpg]
+#### (hexprism.rby)[hexprism.rby] and (hexprism.jpg)[hexprism.jpg]
 This is an adaptation of eg5 from [egs.rby] where you calculate the volume of a cylinder, but I wanted to try a program that had two inputs instead of 1, and also figure out how fst/snd work.
 
 #### Miscellaneous 
