@@ -1,0 +1,3 @@
+wordlength = 4. # number of bits per word
+parity = uint2bit wordlength ; (apl (m-1))^~1 ; rdl (m-1) xor.
+current = parity.
