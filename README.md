@@ -22,12 +22,13 @@ This is the parity code from eg9 of [egs.rby](egs.rby) and an image showing why 
 
 #### [convolver.rby](convolver.rby) and [convolver.jpg](convolver.jpg)
 This is the convolver code from eg10 of [egs.rby](egs.rby) and an image showing its diagram. Its input is of the type `<x, <w1, w2, w3>>` Note that `` `D` ``refers to the delay block. Also remeber that since delays are involved, you have to specify the inputs at each clock cycle using a `;` like this: 
-        re
-        "x0 w0 w1 w2 w3 ; 
-        x1 w0 w1 w2 w3 ;
-        x2 w0 w1 w2 w3 ; 
-        x3 w0 w1 w2 w3 ; 
-        x4 w0 w1 w2 w3"
+
+    re 
+    "x0 w0 w1 w2 w3 ; 
+    x1 w0 w1 w2 w3 ;
+    x2 w0 w1 w2 w3 ; 
+    x3 w0 w1 w2 w3 ; 
+    x4 w0 w1 w2 w3"
 
 #### Miscellaneous 
  - Put parameters of functions in angle brackets if there are more than one, eg . ``VAR x y . <x, y> $rel <`mult` <x,y>>.``
