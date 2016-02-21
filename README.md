@@ -30,6 +30,8 @@ This is the convolver code from eg10 of [egs.rby](egs.rby) and an image showing 
     x3 w0 w1 w2 w3 ; 
     x4 w0 w1 w2 w3 "
     
+#### Pipelining
+To properly pipeline a block, put a `D` at every domain connection and a `D^-1` at every range connection of every element of the block. [Using Horner's Rule](pipeline_horner.png) you can rearrange the delay elements to put the antidelays at the inputs/outputs of the block, where they can be ignored. Then [draw contours](pipeline_contours.png) through the delay elements, making sure each contour crosses an equal number of delays/antidelays, that each delay element is not crossed by more than one contour, and that contours do not cross each other. These are your pipeline stages. It is up to you to find an efficient way to arrange the contours.
 
 #### Miscellaneous
  - ##### *Horner's Rule:* (A;B)^n == A^n ; B^n
