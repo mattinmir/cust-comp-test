@@ -31,7 +31,9 @@ This is the convolver code from eg10 of [egs.rby](egs.rby) and an image showing 
     x4 w0 w1 w2 w3 "
     
 
-#### Miscellaneous 
+#### Miscellaneous
+ - ##### Horner's Rule: (A;B)^n == A^n ; B^n
+  
  - Put parameters of functions in angle brackets if there are more than one, eg . ``VAR x y . <x, y> $rel <`mult` <x,y>>.``
  inputted from stdin.
  - `/\ 3 R = [R^0, R^1, R^2] = [id, R, R^2]`
