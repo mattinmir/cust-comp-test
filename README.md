@@ -32,7 +32,7 @@ This is the convolver code from eg10 of [egs.rby](egs.rby) and an image showing 
     
 
 #### Miscellaneous
- - ##### Horner's Rule: (A;B)^n == A^n ; B^n
+ - ##### *Horner's Rule:* (A;B)^n == A^n ; B^n
   
  - Put parameters of functions in angle brackets if there are more than one, eg . ``VAR x y . <x, y> $rel <`mult` <x,y>>.``
  inputted from stdin.
