@@ -33,6 +33,8 @@ This is the convolver code from eg10 of [egs.rby](egs.rby) and an image showing 
 #### Pipelining
 To properly pipeline a block, put a `D` at every domain connection and a `D^-1` at every range connection of every element of the block. [Using the rule (A;B)^n == A^n ; B^n](pipeline_horner.png) you can rearrange the delay elements to put the antidelays at the inputs/outputs of the block, where they can be ignored. Then [draw contours](pipeline_contours.png) through the delay elements, making sure each contour crosses an equal number of delays/antidelays, that each delay element is not crossed by more than one contour, and that contours do not cross each other. These are your pipeline stages. It is up to you to find an efficient way to arrange the contours.
 
+#### Definition of Triangle /\
+Triangle is defined inductively as `/\ n+1 R = (apr n)^~1 ; [/\ n R , R^n] ; apr n.` To understand why the `apr`s are needed, you have to consider that with them, the domain/range look like `<-,-,-,-> ~ <-,-,-,->`, and without them they look like `<<-,-,->,-> ~ <<-,-,->,->`, so they are needed to keep the types consistent. Remember that `apr n` takes a list of n and a single element, and appends it to the right end of the list, and so `(apr n)^~1` splits a list of size n+1 into a list of size n and and a sngle element. See the diagrams for triangle [with `apr`s](trianglewithapr.jpg)and [without `apr`s](trianglewithoutapr.jpg) to see more clearly the difference.  
 #### Miscellaneous
  - #####*Horner's Rule:* if `[P, Q] ; R = R ; Q` then `[/\ n P, Q^n]; rdr n R = rdr n (snd Q ; R)`.
 
