@@ -16,9 +16,12 @@ This is an adaptation of eg5 from [egs.rby] where you calculate the volume of a 
 
 ####  [rdr.jpg](rdr.jpg) and [rdl.jpg](rdl.jpg)
 `rdl` and `rdr` can be useful for aggregating functions (eg. `add`) on lists of values. They require input types of `<a, <x1, x2, x3, ... >>` and `<<x1, x2, x3,...> ,a>` respectively, due to the sizes of their domain/range, as seen in the images.
+
 Inductive definition:
-rdr_1 R = fst[-]^-1;R.
-rdr_(n+1) = fst (apr_n)^-1 ; lsh ; snd R ; rdr_n R.
+
+`rdr_1 R = fst[-]^~1;R.`
+`rdr_(n+1) = fst (apr_n)^~1 ; lsh ; snd R ; rdr_n R.`
+
 [inductiverdr.jpg](inductiverdr.jpg)
 
 
