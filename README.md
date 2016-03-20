@@ -20,6 +20,7 @@ This is an adaptation of eg5 from [egs.rby] where you calculate the volume of a 
 Inductive definition:
 
 `rdr_1 R = fst[-]^~1;R.`
+
 `rdr_(n+1) = fst (apr_n)^~1 ; lsh ; snd R ; rdr_n R.`
 
 [inductiverdr.jpg](inductiverdr.jpg)
