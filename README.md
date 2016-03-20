@@ -21,8 +21,7 @@ Inductive definition:
 
 `rdr_1 R = fst[-]^~1;R.`
 
-`rdr_(n+1) = fst (apr_n)^~1 ; lsh ; snd R ; rdr_n R.`
-
+`rdr (n+1) = fst (apr n)^~1 ; lsh ; snd R ; rdr n R.`
 [inductiverdr.jpg](inductiverdr.jpg)
 
 
